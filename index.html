@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2D Craft Mobile Version By Swarnim Mayukh. (My First Try.).</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body  class="body_background">
+
+	<center>
+	<h2 id="H_2" class="btn-primary">2D CRAFT Mobile Version.</h2>
+	<div id="head_info">
+		<h3 id="Width" class="btn-danger">Current Width  = <span id="Current_Width">30</span></h3>
+		<h3 id="Height" class="btn-danger">Current Height  = <span id="Current_Height">30</span> </h3>
+	</div>
+	<h4 id="H_4">This is 2D CRAFTS Mobile Version.Thanks For Supporting Us .</h4>
+	<div id="div2"></div>
+	<h4 id="splash">Press any button (Like up,down,left or right.) for the player to be visible.</h4>
+	<button id="light_it_up1" onclick="light_it_up()">Light It Up.</button>
+    <button id="enter1" onclick="enter()">Enter.</button> 
+	<button id="back1" onclick="back()">Exit.</button>
+	<button id="B14" onclick="hide_total()">Hide total no.of block placed.</button>
+	<button id="B12" onclick="total()">Show no. of block placed.</button>
+	<button id="B1" onclick="show()">For instruction click here . </button>
+	<button id="B2" onclick="hide()">Hide instruction.</button>
+	<button id="reviewsupport" onclick="reviewsupport()">Review/Support.</button>
+    <canvas id="myCanvas" height="600" width="1000"></canvas>	 
+	<br><br>
+	<a id="Email" class="fa fa-envelope" href="mailto:2dcraftis@gmail.com?Subject=I have some idea or I found a bug.">For support or to share idea on email click here.</a>
+</center>
+<button id="up" onclick="up()">UP.</button>
+<button id="down" onclick="down()">DOWN.</button>
+<button id="left" onclick="left()">LEFT.</button>
+<button id="right" onclick="right()">RIGHT.</button>
+<button id="tame"  class="btn btn-primary" onclick="tame()">Tame.</button>
+<button id="remove" class="btn btn-succes" onclick="remove()">Remove Pet (Plz don't do it).</button>
+<img id="grass" onclick="grass()" src="ground.png"  width="50" height="50" >
+<img id="red" onclick="stone()" src="cloud.jpg"  width="50" height="50" >
+<img id="stone" onclick="red()" src="roof.jpg"  width="50" height="50" >
+<img id="light" onclick="light()"  src="unique.png" width="50" height="50"  > 
+<img id="yellow" onclick="yellow()" src="yellow_wall.png" width="50" height="50" >
+<img id="wall" onclick="wall()" src="wall.jpg" width="50" height="50" >
+<img id="trunk" onclick="trunk()" src="trunk.jpg" width="50" height="50" >
+<img onclick="ice()" id="ice" src="ice-cube-block-500x500.jpg" width="50" height="50">
+<img id="pasta" onclick="pasta()" src="download (2).jpeg" width="50" height="50">
+<img id="bat" onclick="bat()" src="bat..jpeg" width="50" height="50">
+<img id="obi" onclick="obi()" src="obi..png" width="50" height="50">
+<img id="pizza" onclick="pizza()" src="pizza..jpg" width="50" height="50">
+<button id="sus"onclick="sus()">Tottaly Not A SUS BUTTON.</button>
+<button id="remove_block" onclick="remove()">Remove Block.</button>
+
+	<script src="main.js"></script>
+</body>
+</html>
