@@ -66,6 +66,7 @@ a
 	font-family: cursive;
 	font-size: 1.45pc;
 	padding-left: 500px;
+	display: none;
 }
 
 #Email2 {
@@ -126,26 +127,3 @@ a
 	font-size: 1cm;
 }
 
-#up{
-	position:absolute;
-	left: 100px;
-	bottom: 100px;
-}
-
-#left {
-	position: absolute;
-	right: 50px;
-	bottom: 60px;
-}
-
-#right {
-	position: absolute;
-	left: 100px;
-	bottom: 60px;
-}
-
-#down {
-	position: absolute;
-    right: 100px;
-	bottom: 100px;
-}
