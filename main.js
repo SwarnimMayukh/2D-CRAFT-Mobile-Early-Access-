@@ -14,7 +14,8 @@ var obi_img_object = "obi..png";
 var new_area = "design1.png";
 var obi_count = 0;
 const music = new Audio('Recording.m4a');
-var array_1 = ["Shift+m to decress the size of the block","Shift+p to incress the size of the block.","Y for yellow brick", "W for wall", "L for light green block","G for grass block.", "T for wood.", "R for red block","D for dark green.", "C for stone","U for light block.","I for ice block","for 2 check it by your self !!","for X check it by your self !!","for j check it by your self","S for pasta .","B for bat (Be carful with that cricket bat .).","Z for pizza","To remove something press delete or reload the page.","controls for the player is up arrow,down arrow,right arrow, left arrow keys.","Thanks For Playing 2D CRAFT."]
+var array_1 = ["To Move The Player Press The Up,Down,Left and Right Buttons on your screen.","To Place A Block Just Press The Image Of The Block, Team 2D CRAFT."];
+var array_4 = ["2 Questions of Jadoo is in undertesting for mobile version.","For Any Further Info Please Visit 2D CRAFT Info/Support website,Team 2D CRAFT."]
 var block = "";
 var array_2 = ["The 2 question of Jadoo feature has been delayed."];
 
@@ -359,4 +360,9 @@ function hide2() {
 
 function reviewsupport() {
     window.location = "reviewsupport.html";
+}
+
+function  testing_features() {
+   div2.style.display = "block";
+   document.getElementById("div2").innerHTML = array_4;
 }
