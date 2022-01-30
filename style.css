@@ -127,8 +127,10 @@ a
 	font-size: 1cm;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
-
-
-
-
+@page { 
+	size: landscape;
+}

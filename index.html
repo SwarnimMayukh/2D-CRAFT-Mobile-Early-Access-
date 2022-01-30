@@ -18,6 +18,7 @@
 <body  class="body_background">
 
 	<center>
+		<div class="scroll">
 	<h2 id="H_2" class="btn-primary">2D CRAFT Mobile Version.</h2>
 	<div id="head_info">
 		<h3 id="Width" class="btn-danger">Current Width  = <span id="Current_Width">30</span></h3>
@@ -32,14 +33,15 @@
     <button id="enter1" onclick="enter()">Enter.</button> 
 	<button id="back1" onclick="back()">Exit.</button>
 	<button id="reviewsupport" onclick="reviewsupport()">Review/Support.</button>
-    <canvas id="myCanvas" height="600" width="1000"></canvas>	 
-</center>
-<button id="up" onclick="up()">UP.</button>
+	<br>
+	<button id="up" onclick="up()">UP.</button>
 <button id="down" onclick="down()">DOWN.</button>
 <button id="left" onclick="left()">LEFT.</button>
 <button id="right" onclick="right()">RIGHT.</button>
+<button id="showblocks" class="btn btn-scusses" onclick="show_blocks()" style="display: none;">Show Blocks.j</button>
+<br>
 <button id="tame"  class="btn btn-primary" onclick="tame()">Tame.</button>
-<button id="remove" class="btn btn-succes" onclick="remove()">Remove Pet (Plz don't do it).</button>
+<br>
 <img id="grass" onclick="grass()" src="ground.png"  width="50" height="50" >
 <img id="red" onclick="stone()" src="cloud.jpg"  width="50" height="50" >
 <img id="stone" onclick="red()" src="roof.jpg"  width="50" height="50" >
@@ -52,8 +54,12 @@
 <img id="bat" onclick="bat()" src="bat..jpeg" width="50" height="50">
 <img id="obi" onclick="obi()" src="obi..png" width="50" height="50">
 <img id="pizza" onclick="pizza()" src="pizza..jpg" width="50" height="50">
+<br>
 <button id="sus"onclick="sus()">Tottaly Not A SUS BUTTON.</button>
 <button id="remove_block" onclick="remove()">Remove Block.</button>
+    <canvas id="myCanvas" height="602" width="900"></canvas>	
+</div> 
+</center>
 
 	<script src="main.js"></script>
 </body>

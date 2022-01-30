@@ -130,7 +130,7 @@ function pasta() {
     div2.style.display = "block";
       document.getElementById("div2").innerHTML = "Yummy Yummy In My Tummy.";
     setTimeout(function(){
-      canva.remove(block_img_object);
+      canvas.remove(block_img_object);
       div2.style.display = "none";
     }, 3000);
 }
