@@ -300,7 +300,7 @@ function left() {
 }
 
 function right() {
-    if(player_x<=850){
+    if(player_x<=550){
         player_x = player_x + block_img_height;
         console.log("block image height ="+block_img_height);
         console.log("when up key is pressed, x="+player_x+"y="+player_y);
