@@ -129,8 +129,5 @@ a
 
 html {
 	scroll-behavior: smooth;
-}
-
-@page { 
-	size: landscape;
+	orientation: landscape;
 }
