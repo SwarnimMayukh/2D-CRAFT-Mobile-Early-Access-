@@ -131,3 +131,7 @@ html {
 	scroll-behavior: smooth;
 	orientation: landscape;
 }
+
+#B15,#B16 {
+	display: none;
+}

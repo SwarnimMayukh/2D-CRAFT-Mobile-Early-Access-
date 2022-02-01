@@ -3,12 +3,15 @@ player_x = 10;
 player_y = 10;
 pet_x = 20;
 pet_y = 20;
+jadoo_x = 50;
+jadoo_y = 50;
 block_img_width = 50;
 block_img_height = 50;
 new_area_height = 100;
 new_area_width = 150;
 var player_object = "";
 var pet_object = "";
+var jadoo_object = "download (1).jpeg";
 var block_img_object = "";
 var obi_img_object = "obi..png";
 var new_area = "design1.png";
@@ -86,6 +89,20 @@ function obi_image()
             left:player_x 
         }); 
         canvas.add(obi_img_object); 
+    });
+}
+
+function jadoo_update() {
+    fabric.Image.fromURL("download (1).jpeg",function(Img){
+        jadoo_object = Img;
+        jadoo_object.scaleToWidth(110);
+        jadoo_object.scaleToHeight(100);
+        jadoo_object.set({
+            top:jadoo_y,
+            left:jadoo_x
+        });
+        canvas.add(jadoo_object);
+
     });
 }
 
@@ -318,6 +335,42 @@ function right() {
         pet_update();
     }
 }
+setTimeout(function(){
+    jadoo_x = Math.floor(Math.random() * 540) + 1;
+    canvas.remove(jadoo_object);
+    jadoo_update()
+    div2.style.display = "block";
+    document.getElementById("div2").innerHTML = "What's up, its me jadoo !!";
+    console.log("Let's goo jadoo is here too !! Whoooooooo woooooooo !!");
+    setTimeout(function(){
+        div2.style.display  = "none";
+        setTimeout(function(){
+            div2.style.display = "block";
+            document.getElementById("div2").innerHTML = "So, shall I start asking questions ?";
+            console.log("Only 2 qusetions are there come answer it !!");
+            B15.style.display = "block";
+            B16.style.display = "block";
+        })
+    })
+},600000);
+
+//Undertesting features starts here. // 
+function yep() {
+grass.style.display = "none";
+red.style.display = "none";
+stone.style.display = "none";
+light.style.display = "none";
+yellow.style.display = "none"; 
+wall.style.display = "none"; 
+trunk.style.display = "none"; 
+ice.style.display = "none"; 
+pasta.style.display = "none"; 
+ bat.style.display = "none";
+obi.style.display = "none";
+pizza.style.display = "none";
+div2.style.display = "block"; 
+}
+//Undertesting feature ends here.//
 
 function show() {
     document.getElementById("div22").innerHTML=array_1;
