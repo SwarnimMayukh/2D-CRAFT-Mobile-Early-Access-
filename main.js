@@ -335,9 +335,7 @@ function right() {
         pet_update();
     }
 }
-setTimeout(function(){
-    jadoo_x = Math.floor(Math.random() * 540) + 1;
-    canvas.remove(jadoo_object);
+setTimeout(function(){;
     jadoo_update()
     div2.style.display = "block";
     document.getElementById("div2").innerHTML = "What's up, its me jadoo !!";
@@ -347,30 +345,152 @@ setTimeout(function(){
         setTimeout(function(){
             div2.style.display = "block";
             document.getElementById("div2").innerHTML = "So, shall I start asking questions ?";
-            console.log("Only 2 qusetions are there come answer it !!");
+            console.log("Only 2 qusetions are there come on answer it !!");
             B15.style.display = "block";
             B16.style.display = "block";
         })
     })
-},600000);
-
-//Undertesting features starts here. // 
+},60000);
+ 
 function yep() {
-grass.style.display = "none";
-red.style.display = "none";
-stone.style.display = "none";
-light.style.display = "none";
-yellow.style.display = "none"; 
-wall.style.display = "none"; 
-trunk.style.display = "none"; 
-ice.style.display = "none"; 
-pasta.style.display = "none"; 
- bat.style.display = "none";
-obi.style.display = "none";
-pizza.style.display = "none";
-div2.style.display = "block"; 
+document.getElementById("div2").innerHTML = "So, your first question is What has to be broken before you can use it?"
+    B17.style.display = "block";
+    B18.style.display = "block";
+    B19.style.display = "block";
+    B16.style.display = "none";
+    B15.style.display = "none";
+
 }
-//Undertesting feature ends here.//
+
+function no() {
+    div2.style.display = "block";
+    document.getElementById("div2").innerHTML = "Oh, ok i think i have to come again later.";
+    canvas.remove(jadoo_object);
+    B15.style.display = "none";
+    B16.style.display = "none";
+}
+
+function ans1() {
+    document.getElementById("div2").innerHTML = "Yep thats correct, fun fact there is another ans too its coconut."
+    setTimeout(function(){
+        B20.style.display = "block";
+        B21.style.display = "block";
+        B22.style.display = "block";
+        B19.style.display = "none";
+        B18.style.display = "none";
+        B17.style.display = "none";
+        B16.style.display = "none";
+        B15.style.display = "none";
+
+        document.getElementById("div2").innerHTML = " So, your next question is  What question can you never answer yes to?";
+        document.getElementById("B20").innerHTML = "A.Are you asleep yet?"
+        document.getElementById("B21").innerHTML = "B.Did you do your homework?"
+        document.getElementById("B22").innerHTML = "C.Is the school close today?"
+      }, 5000);
+}
+
+function ans2() {
+    
+    document.getElementById("div2").innerHTML = "You got it wrong , (did break box before opening it ? no right).";
+    setTimeout(function(){
+        document.getElementById("div2").innerHTML = "Sayonara";
+        canvas.remove(block_img_object);
+        setTimeout(function(){
+
+            B24.style.display = "block";
+            B25.style.display = "block";
+            B17.style.display = "none";
+            B18.style.display = "none";
+            B19.style.display = "none";
+            B16.style.display = "none";
+            B15.style.display = "none";
+        
+          div2.style.display = "none";
+      }, 5000);
+      }, 5000);
+}
+
+function ans3() {
+
+    document.getElementById("div2").innerHTML = "ahmm no.(But that option is funny.(Who put that option ? Hmm you did. Jadoo: Never mind)) ";
+    setTimeout(function(){
+      document.getElementById("div2").innerHTML = "Later (Bye).";
+      canvas.remove(block_img_object);
+      setTimeout(function(){
+          B17.style.display = "none";
+          B18.style.display = "none";
+          B19.style.display = "none";
+          B16.style.display = "none";
+          B15.style.display = "none";
+      
+        div2.style.display = "none";
+    }, 5000);
+    }, 5000);
+}
+
+function ans4() {
+    document.getElementById("div2").innerHTML = "place 5 obi blocks and then see what happens. Till then Ciao";
+    enter1.style.display = "block";
+    canvas.remove(jadoo_object);
+    setTimeout(function(){
+        document.getElementById("div2").innerHTML = "Thanks For Playing 2D CRAFT AND WE WILL MEET AGAIN WITH A DIFFRENT CHALLENGE.";
+        div2.style.display = "none";
+        enter1.style.display = "none";
+        
+      }, 10000);
+    B22.style.display = "none";
+    B21.style.display = "none";
+    B20.style.display = "none";
+    B19.style.display = "none";
+    B18.style.display = "none";
+    B17.style.display = "none";
+    B16.style.display = "none";
+    B15.style.display = "none";
+
+}
+
+function ans5() {
+
+    document.getElementById("div2").innerHTML = "No, that's wrong.(Wait min do you don't do your homework? you should always do your homework. Players: Do you do your homework jadoo huh ? Jadoo: Look Free Robux. Players: Where where. look jadoo is runing away catch him !!)."
+    setTimeout(function(){
+        document.getElementById("div2").innerHTML = "adiós";
+        div2.style.display = "none";
+        canvas.remove(block_img_object);
+
+        B24.style.display = "block";
+        B25.style.display = "block";
+        B22.style.display = "none";
+        B21.style.display = "none";
+        B20.style.display = "none";
+        B19.style.display = "none";
+        B18.style.display = "none";
+        B17.style.display = "none";
+        B16.style.display = "none";
+        B15.style.display = "none";
+
+      }, 5000);
+}
+
+function ans6() {
+
+    document.getElementById("div2").innerHTML = "No, that's wrong too (The one kid who always forgets when is the school day and when is holiday.)."
+    setTimeout(function(){
+       document.getElementById("div2").innerHTML = "alavida.";
+       setTimeout(function(){
+        div2.style.display = "none";
+        canvas.remove(block_img_object);
+    B22.style.display = "none";
+    B21.style.display = "none";
+    B20.style.display = "none";
+    B19.style.display = "none";
+    B18.style.display = "none";
+    B17.style.display = "none";
+    B16.style.display = "none";
+    B15.style.display = "none";
+
+      }, 5000);
+      }, 5000);
+}
 
 function show() {
     document.getElementById("div22").innerHTML=array_1;
@@ -418,4 +538,12 @@ function reviewsupport() {
 function  testing_features() {
    div2.style.display = "block";
    document.getElementById("div2").innerHTML = array_4;
+}
+
+function instruction() {
+    window.location = "video.html"
+}
+
+function back() {
+    window.location = "index.html";
 }
