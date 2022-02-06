@@ -547,3 +547,18 @@ function instruction() {
 function back() {
     window.location = "index.html";
 }
+
+function click() {
+    window.location = "index.html";
+}
+
+function click2() {
+    document.getElementById("div90").innerHTML = "Ans of jadoos questions - in every question the first (option a.) option is correct."
+    setTimeout(function() {
+        window.location = "index.html";
+    },4000);
+}
+
+function click1() {
+    window.location = "index2.html";
+}
