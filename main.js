@@ -562,3 +562,7 @@ function click2() {
 function click1() {
     window.location = "index2.html";
 }
+
+function start() {
+    window.location = "game.html";
+}
