@@ -15,7 +15,7 @@ var jadoo_object = "download (1).jpeg";
 var block_img_object = "";
 var obi_img_object = "obi..png";
 var new_area = "design1.png";
-var obi_count = 0;
+var obi_count = obi_img_object;
 const music = new Audio('Recording.m4a');
 var array_1 = ["To Move The Player Press The Up,Down,Left and Right Buttons on your screen.","To Place A Block Just Press The Image Of The Block, Team 2D CRAFT."];
 var array_4 = ["2 Questions of Jadoo is in undertesting for mobile version.","For Any Further Info Please Visit 2D CRAFT Info/Support website,Team 2D CRAFT."]
@@ -138,9 +138,6 @@ function ice() {
     new_image("ice-cube-block-500x500.jpg")
 }
 
-function obi() {
-
-}
 
 function pasta() {
     new_image("download (2).jpeg");
@@ -240,6 +237,7 @@ function enter() {
     enter1.style.display = "none";
     window.location = "newarea.html";
     console.log("WOW This looks new!!");
+    canvas.remove(pet_object);
     setTimeout(function(){
         div2.style.display = "none";
         back1.style.display = "block";
